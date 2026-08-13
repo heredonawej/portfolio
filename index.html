@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button id="menu-btn">≡</button>
+
+            <div id="menu">
+                <a href="#accueil">Accueil</a>
+                <a href="#apropos">A propos</a>
+                <a href="#competences">Compétences</a>
+                <a href="#projets">Projets</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <div id="accueil" class="hero">
+            <div class="hero-text">
+                <p class="petit-titre">Bonjour, je suis</p>
+                <h1>Heritier nawej</h1>
+                <h2>Développeur Web</h2>
+                <p>
+                    Je crée des sites web modernes, rapides et adaptés
+                    aux télephones et aux ordinateurs.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projets" class="btn">Voir mes projets</a>
+                    <a href="cv.pdf" class="btn cv" download>
+                        Télécharger mon CV
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="photo.jpeg" alt="Photo de profil">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="apropos">
+            <h2>A propos de moi</h2>
+            <p>
+                Je suis un développeur passionné par l'informatique
+                et la création d'application web.
+            </p>
+        </section>
+
+        <section id="competences">
+            <h2>Mes compétences</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Python</li>
+                <li>Nodejs</li>
+            </ul>
+        </section>
+
+        <section id="projets">
+            <h2>Mes projets</h2>
+
+            <div class="projets-container">
+                <div class="projet">
+                    <h3>Projet 1</h3>
+                    <p>
+                        Création d'un site web moderne avec HTML et CSS
+                    </p>
+                    <button>Voir le projet</button>
+                </div>
+
+                <div class="projet">
+                    <h3>Projet 2</h3>
+                    <p>
+                        Développement d'une application interactive avec JavaScript.
+                    </p>
+                    <button>Voir le projet</button>
+                </div>
+
+                <div class="projet">
+                    <h3>Projet 3</h3>
+                    <p>
+                        Création d'une application avec React.
+                    </p>
+                    <button>Voir le projet</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+
+            <form id="contactForm">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" placeholder="Votre nom" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Votre email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Votre message" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+            <p id="confirmation"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Mon portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
